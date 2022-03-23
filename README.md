@@ -6,5 +6,5 @@ Projet étudiant au sein de Paris YNOV Campus - INFO B3 INGELOG -> L'ojectif : r
 
 ## Auteur
 
-Clément WALSH de Serrant
+Clément WALSH de SERRANT
 https://www.clementwds.com
