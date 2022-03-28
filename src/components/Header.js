@@ -22,17 +22,7 @@ function Header() {
                     </li>
                     <li className="nav-item">
                         <Link href="#">
-                            <a className="nav-link">Nouveautés les plus regardées</a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="#">
                             <a className="nav-link">Ma liste</a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="#">
-                            <a className="nav-link">Audio et sous-titres</a>
                         </Link>
                     </li>
                 </ul>
