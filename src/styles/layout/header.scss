@@ -1,0 +1,39 @@
+.header{
+    &-main {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: $darkColor;
+    }
+    &-logo{
+        img{
+            width: 150px;
+        }
+    }
+    &-nav{
+        .nav{
+            &-list{
+                display: flex;
+                list-style: none;
+                &-left{
+                    float: left;
+                }
+                &-right{
+                    float: right;
+                }
+            }
+            &-item {
+                margin: 0px 10px;
+            }
+            &-link{
+                color: $lightColor;
+                &:hover{
+                    color: $lightHoverColor;
+                }
+                &:active{
+                    color: $lightActiveColor;
+                }
+            }
+        }
+    }
+}
