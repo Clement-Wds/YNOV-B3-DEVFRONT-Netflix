@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return(
     <div className="footer-main">
-        <p className="text-center">Copyright © 2022 - Netflix Clone by Clément Wds</p>
+        <p>Copyright © 2022 - Netflix Clone by Clément Wds</p>
     </div>
   );
 }
