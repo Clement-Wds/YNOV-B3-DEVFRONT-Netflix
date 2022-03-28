@@ -11,13 +11,8 @@ function Header() {
             <nav className="header-nav">
                 <ul className="nav-list nav-list-left">
                     <li className="nav-item">
-                        <Link href="/s">
+                        <Link href="/">
                             <a className="nav-link">Accueil</a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="#">
-                            <a className="nav-link">Séries</a>
                         </Link>
                     </li>
                     <li className="nav-item">
