@@ -6,7 +6,11 @@ function Header() {
     return(
         <div className="header-main">
             <div className="header-logo">
-                <img src={LogoNetflix.src} alt="Netflix" />
+                <Link href="/">
+                    <a>
+                        <img src={LogoNetflix.src} alt="Netflix" />
+                    </a>
+                </Link>
             </div>
             <nav className="header-nav">
                 <ul className="nav-list nav-list-left">
