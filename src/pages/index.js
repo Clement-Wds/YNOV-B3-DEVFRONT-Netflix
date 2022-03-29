@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import MovieSmallCard from "/src/components/MovieSmallCard";
 
-export default function Home() {
+const Index = () => {
   return (
-    <div>
+    <div className="">
+        <div className="movies-grid">
+            <MovieSmallCard />
+            <MovieSmallCard />
+            <MovieSmallCard />
+            <MovieSmallCard />
+        </div>
     </div>
-  )
+  );
 }
+
+export default Index;

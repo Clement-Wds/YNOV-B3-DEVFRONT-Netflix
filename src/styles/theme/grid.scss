@@ -1,0 +1,16 @@
+.movies-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .movie-small-card{
+        width: 10%;
+        margin: 10px;
+        .card-body{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+}
