@@ -5,11 +5,11 @@
     display: inline-block;
     font-size: 20px;
 
-    &-primary{
+    &-red{
         background-color: $redColor;
         color: white;
     }
-    &-primary:hover{
+    &-red:hover{
         background-color: $redHoverColor;
     }
 }
