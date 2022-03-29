@@ -1,14 +1,16 @@
-//Theme
-@import './theme/grid.scss';
-
-//Pages
-@import './pages/login.scss';
-
 //Helpers
 @import './helpers/variables.scss';
 
 //Base
 @import './base/base.scss';
+
+//Theme
+@import './theme/grid.scss';
+@import './theme/button.scss';
+@import './theme/input.scss';
+
+//Pages
+@import './pages/login.scss';
 
 //Layout
 @import './layout/header.scss';
