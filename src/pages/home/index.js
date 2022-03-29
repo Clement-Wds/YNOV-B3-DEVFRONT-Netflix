@@ -1,7 +1,7 @@
 import React from 'react';
 import MovieSmallCard from "/src/components/MovieSmallCard";
 
-const Index = () => {
+const Home = () => {
   return (
     <div className="">
         <div className="movies-grid">
@@ -14,4 +14,4 @@ const Index = () => {
   );
 }
 
-export default Index;
+export default Home;
