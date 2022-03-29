@@ -1,0 +1,14 @@
+.login-page{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/d0982892-13ac-4702-b9fa-87a410c1f2da/0d080454-1791-46e4-a1fb-3b10dcae0ce0/FR-fr-20220321-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    .hero{
+        &-main{
+            background-color: rgba(0, 0, 0, 0.50);
+            margin: 0px;
+            padding: 300px;
+        }
+        &-content{
+            text-align: center;
+            color: white;
+        }
+    }
+}
