@@ -4,4 +4,23 @@
         background-color: $darkColor;
         color: $lightColor;
     }
+
+    &-row{
+        display: flex;
+    }
+
+    &-col{
+        float: left;
+        width: 25%;
+        ul{
+            list-style-type: none;
+        }
+        li{
+            margin: 5px;
+        }
+        a:hover{
+            color: $lightHoverColor;
+            text-decoration: underline;
+        }
+    }
 }
