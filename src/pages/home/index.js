@@ -14,6 +14,8 @@ const Home = () => {
         <Hero />
       </div>
 
+      {/* TODOUM */}
+
       <div clasName="home-body">
         <Row name="Les plus populaires" path="popular" />
         <Row name="Les mieux notés" path="top_rated" />

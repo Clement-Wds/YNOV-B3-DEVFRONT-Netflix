@@ -8,6 +8,37 @@ const Row = ({name, path}) => {
     const fetchUrl = `https://api.themoviedb.org/3/movie/${path}?api_key=b130d867055ff0c09fffec4729292241`;
     const [movies, setMovies] = useState([]);
 
+    const addToList = (element) => {
+        let movieToInsert = {
+          id: element.id,
+          title: element.title,
+          image: element.poster_path
+        };
+    
+        const whiteList = [];
+    
+        if(localStorage.getItem("whiteList")) {
+          const localStorageWhiteListe = JSON.parse(localStorage.getItem("whiteList"));
+          localStorageWhiteListe.forEach((movie) => {
+            whiteList.push(movie);
+          });
+
+          const indexOfExistingMovie = whiteList.findIndex((el) => el.id === element.id);
+
+          if (indexOfExistingMovie !== -1) {
+            localStorage.setItem("whiteList", JSON.stringify(whiteList));
+          }
+          else {
+            whiteList.push(movieToInsert);
+            localStorage.setItem("whiteList", JSON.stringify(whiteList));
+          }
+        }
+        else{
+          whiteList.push(movieToInsert);
+          localStorage.setItem("whiteList", JSON.stringify(whiteList));
+        };
+      }
+
     useEffect(() => {
         async function fetchData(){
             const request = await axios.get(fetchUrl);
@@ -46,7 +77,7 @@ const Row = ({name, path}) => {
                             </svg>
                         </button>
 
-                        <button type="button" className="card-button">
+                        <button type="button" className="card-button" onClick={() => addToList(movie)}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
