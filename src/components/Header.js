@@ -20,12 +20,12 @@ function Header() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="#">
+                        <Link href="/home#movies">
                             <a className="nav-link">Films</a>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="#">
+                        <Link href="/white_list">
                             <a className="nav-link">Ma liste</a>
                         </Link>
                     </li>
@@ -34,16 +34,6 @@ function Header() {
                 <li className="nav-item">
                         <Link href="#">
                             <a className="nav-link">RECHERCHE</a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="#">
-                            <a className="nav-link">DIRECT</a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="#">
-                            <a className="nav-link">Jeunesses</a>
                         </Link>
                     </li>
                 </ul>

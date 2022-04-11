@@ -16,7 +16,7 @@ const Home = () => {
 
       {/* TODOUM */}
 
-      <div clasName="home-body">
+      <div clasName="home-body" id="movies">
         <Row name="Les plus populaires" path="popular" />
         <Row name="Les mieux notés" path="top_rated" />
       </div>
