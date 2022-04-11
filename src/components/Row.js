@@ -57,8 +57,6 @@ const Row = () => {
 
                 ))}
 
-                
-
             </div>
 
         </div>
