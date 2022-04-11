@@ -11,7 +11,8 @@ const Home = () => {
   return (
     <div className="">
 
-      <Row />
+      <Row name="Les plus populaires" path="popular" />
+      <Row name="Les mieux notés" path="top_rated" />
 
       
     </div>

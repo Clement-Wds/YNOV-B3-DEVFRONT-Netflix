@@ -3,14 +3,14 @@ import axios from "/node_modules/axios";
 
 import movieService from "/src/services/movie.service";
 
-const Row = () => {
+const Row = ({name, path}) => {
 
-    const film = "https://api.themoviedb.org/3/movie/popular?api_key=b130d867055ff0c09fffec4729292241";
+    const fetchUrl = `https://api.themoviedb.org/3/movie/${path}?api_key=b130d867055ff0c09fffec4729292241`;
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
         async function fetchData(){
-            const request = await axios.get(film);
+            const request = await axios.get(fetchUrl);
             setMovies(request.data.results);
             return request;
         }
@@ -22,7 +22,7 @@ const Row = () => {
 
     return(
         <div className="row">
-            <h2 className="row-title">Catégorie</h2>
+            <h2 className="row-title">{name}</h2>
 
             <div className="card">
 
