@@ -8,6 +8,3 @@ Projet étudiant au sein de Paris YNOV Campus - INFO B3 INGELOG -> L'ojectif : r
 
 Clément WALSH de SERRANT
 https://www.clementwds.com
-
-
-todoum
