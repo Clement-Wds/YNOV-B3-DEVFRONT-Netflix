@@ -1,0 +1,67 @@
+.row{
+    padding-right: 5px;
+    z-index: 999;
+
+    &-title{
+        color: white;
+        margin-left: 20px;
+        position: relative;
+        margin-bottom: 5px;
+    }
+}
+
+.card{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+
+    img{
+        max-height:200px;
+        min-height:200px;
+        transition: transform 450ms;
+        border-radius: 5px;
+        object-fit: contain;
+        visibility: visible;
+    }
+
+    &-body{
+        transition-duration: 0.3s;
+        margin-right:10px;
+    }
+
+    &-body:hover{
+        position: relative;
+        z-index: 11;
+        transform: scale(1.1);
+        visibility: visible;
+        background-color: #141414;
+        transition-duration: 0.9s;
+        border-radius: 5px;
+        height: 210px;
+        box-shadow: 0px 0px 20px black;
+    }
+
+    &-button{
+
+        border-radius: 100%;
+        padding: 4px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        svg{
+            margin-bottom: -4px; 
+        }
+    }
+}
+
+.card::-webkit-scrollbar{
+    display: none;
+}

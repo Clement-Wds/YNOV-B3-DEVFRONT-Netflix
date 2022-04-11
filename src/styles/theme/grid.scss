@@ -6,10 +6,16 @@
     .movie-small-card{
         width: 10%;
         margin: 10px;
-        .card-body{
+        .card-img{
             img{
-                width: 200px;
+                width: 150px;
                 height: auto;
+            }
+        }
+        .card-body{
+            h1{
+                color: white;
+                font-size: 15px;
             }
         }
     }
