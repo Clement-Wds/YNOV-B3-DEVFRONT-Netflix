@@ -1,4 +1,4 @@
-.button{
+.button-big{
     border: none;
     padding: 15px 30px;
     text-decoration: none;
@@ -11,5 +11,45 @@
     }
     &-red:hover{
         background-color: $redHoverColor;
+    }
+}
+
+.button-group{
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    .button{
+        margin: 2px;
+    }
+}
+
+.button{
+    border: none,;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+
+    svg{
+        margin-right: 5px;
+    }
+
+    &-primary{
+        background-color: white;
+        color: black;
+    }
+
+    &-primary:hover{
+        background-color: $lightColor;
+    }
+
+    &-secondary{
+        background-color: rgba(90, 90, 90, 0.484);
+        color: white;
+    }
+
+    &-secondary:hover{
+        background-color: rgba(67, 66, 66, 0.356);
     }
 }

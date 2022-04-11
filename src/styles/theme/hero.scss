@@ -1,0 +1,21 @@
+.hero{
+    &-container{
+        height: 750px;
+    }
+
+    &-content{
+        padding-top: 450px;
+        padding-left: 5%;
+        &-text{
+            color: white;
+        }
+        &-title{
+            font-size: 50px;
+            margin: 0px;
+        }
+        &-description{
+            font-size: 20px;
+            margin-right: 60%;
+        }
+    }
+}

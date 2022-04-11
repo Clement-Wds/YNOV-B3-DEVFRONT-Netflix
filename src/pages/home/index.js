@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
 
-import MovieSmallCard from "/src/components/MovieSmallCard";
+import Hero from "/src/components/Hero";
 import Row from "/src/components/Row";
 
 import movieService from "/src/services/movie.service";
 
 const Home = () => {
-  
 
   return (
-    <div className="">
+    <div className="home">
 
-      <Row name="Les plus populaires" path="popular" />
-      <Row name="Les mieux notés" path="top_rated" />
+      <div className="home-hero">
+        <Hero />
+      </div>
 
-      
+      <div clasName="home-body">
+        <Row name="Les plus populaires" path="popular" />
+        <Row name="Les mieux notés" path="top_rated" />
+      </div>
     </div>
   );
 };

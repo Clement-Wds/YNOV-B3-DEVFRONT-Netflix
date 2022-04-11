@@ -7,7 +7,7 @@ export default {
         .then((res) => res.json())
     },
     getMovie(id) {
-        return fetch(`${apiUrl}/movie/${id}?populate=image`)
+        return fetch(`${apiUrl}/movie/${id}?${apiKey}`)
         .then((res) => res.json())
     }
 }
