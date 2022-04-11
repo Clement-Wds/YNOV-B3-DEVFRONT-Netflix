@@ -1,6 +1,5 @@
 .row{
     padding-right: 5px;
-    z-index: 999;
 
     &-title{
         color: white;
@@ -52,9 +51,9 @@
         cursor: pointer;
         outline: none;
         border: none;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
 
         svg{
             margin-bottom: -4px; 
